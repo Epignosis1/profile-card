@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <div>
+        <header>
+          <h2 data-testid="test-user-name">Victor Omelebele</h2>
+        </header>
+        <figure>
+          <img
+            src="img/profile.jpeg"
+            alt="Profile picture of Victor Omelebele"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+      </div>
+
+      <p data-testid="test-user-bio">
+        Frontend Developer & Data Scientist passionate about building accessible
+        web applications and exploring AI.
+      </p>
+
+      <p>
+        Current time (ms):
+        <span data-testid="test-user-time" id="currentTime"></span>
+      </p>
+
+      <nav data-testid="test-user-social-links">
+        <h3>Socials</h3>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>👨‍💻Coding</li>
+          <li>🏌️‍♀️Gaming</li>
+          <li>✍Reading</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Procrastination</li>
+          <li>Slow internet</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
